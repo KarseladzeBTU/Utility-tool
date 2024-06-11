@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}Link Shortener{% endblock %}
+
+{% block content %}
+<div class="mainCont">
+    <div class="container">
+        <h1 style="margin-left: auto; margin-right: auto; color: white;">Link Shortener</h1>
+        <form method="POST">
+            <div>
+                <label for="input_url">Enter URL:</label>
+                <textarea id="input_url" name="input_url" rows="2" cols="50"></textarea>
+            </div>
+            <div>
+                <button type="submit">Shorten URL</button>
+            </div>
+        </form>
+    </div>
+    <div class="encodedTextDiv">
+        {% if shortened_url %}
+        <h4>Shortened URL:</h4>
+        <p>{{ shortened_url }}</p>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

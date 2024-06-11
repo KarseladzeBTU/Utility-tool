@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}JSON{% endblock %}
+
+{% block content %}
+<div class="mainCont">
+    <div class="container">
+        <h1>JSON Minifier/Beautifier</h1>
+        
+        <form method="POST">
+            <div>
+                 <label class="inputLabel" for="input_text">Input:</label>
+                    <textarea id="input_text" name="input_text" rows="4" cols="50">{{ input_text }}</textarea>
+            </div>
+            <div>
+                <button type="submit" name="action" value="Minify">Minify</button>
+                <button type="submit" name="action" value="Beautify">Beautify</button>
+            </div>
+        </form>
+       
+    </div>
+    <div class="encodedTextDiv">
+        {% if output_text %}
+        <p>{{ action }}d Text:</p>
+        <textarea rows="4" cols="50">{{ output_text }}</textarea>
+        {% endif %}
+    </div>
+    
+</div>
+
+{% endblock %}

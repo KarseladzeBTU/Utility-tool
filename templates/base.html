@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<body>
+    <main>
+        {% block content %}{% endblock %}
+        <nav>
+            <div class="navigationDiv">
+                <a href="{{ url_for('index') }}">
+                    <div class="navBtn">Home <img style="width: 15px; height: 15px;" src="/static/css/images/home.png" alt=""></div>
+                </a>
+                <a href="{{ url_for('base64') }}">
+                    <div class="navBtn">Base64 <img style="width: 15px; height: 15px;" src="/static/css/images/base64.png" alt=""></div>
+                </a>
+                <a href="{{ url_for('url') }}">
+                    <div class="navBtn">URL <img style="width: 15px; height: 15px;" src="/static/css/images/external-link.png" alt=""></div>
+                </a>
+                <a href="{{ url_for('json') }}">
+                    <div class="navBtn">JSON <img style="width: 15px; height: 15px;" src="/static/css/images/bracket-curly.png" alt=""></div>
+                </a>
+                <a href="{{ url_for('qr_page') }}">
+                    <div class="navBtn">QR Code <img style="width: 13px; height: 13px;" src="/static/css/images/qr-code.png" alt=""></div>
+                </a>
+                
+                <a href="{{ url_for('link_shortener') }}">
+                    <div class="navBtn">Link Shortener <img style="width: 13px; height: 13px;" src="/static/css/images/url.png" alt=""></div>
+                </a>
+            </div>
+            <a style="margin-top: -1px;" href="about_us">
+                <div class="aboutUs">About Us<img style="width: 13px; height: 13px;" src="/static/css/images/info.png" alt=""></div>
+            </a>
+           
+        </nav>
+    </main>
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}QR Code Generator{% endblock %}
+
+{% block content %}
+<div class="mainCont">
+    <div class="container">
+        <h1 style="color: white;">QR Code Generator</h1>
+        <form method="POST">
+            <div>
+                <label for="text">Text:</label>
+                <textarea id="text" name="text" rows="4" cols="50"></textarea>
+            </div>
+            <div class="qrCodeColors">
+                <div class="fillColor">
+                    <label for="fill">Fill Color:</label>
+                    <input type="color" id="fill" name="fill" value="#000000">
+                </div>
+                <div>
+                    <button class="qrBtn" type="submit">Generate QR Code</button>
+                </div>
+                <div class="backgroundColor">
+                    <label for="back_color">Background Color:</label>
+                    <input type="color" id="back_color" name="back_color" value="#ffffff">
+                </div>
+            </div>
+           
+        </form>
+
+    </div>
+    <div class="qrCodeDiv">
+        {% if qr_image %}
+        <img src="data:image/jpeg;base64,{{ qr_image }}" alt="QR Code">
+        {% endif %}
+    </div>
+
+</div>
+{% endblock %}

@@ -1,0 +1,223 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    background-image: url(./images/gradient-blue-abstract-technology-background_23-2149213765.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    margin-top: 7%;
+    width: 35%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    height: 89%; 
+}
+
+
+
+.aboutUs{
+    border-radius: 10px;
+    background-color: rgb(88, 178, 214);
+    color: white;
+    height: 50px;
+    padding-right: 25px;
+    padding-left: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -1;
+}
+nav a{
+    text-decoration: none;
+    color: inherit;
+
+}
+.navigationDiv a {
+    text-decoration: none;
+    color: inherit;
+
+}
+
+.navigationDiv {
+    display: grid;
+
+    gap: 15px;
+}
+
+.navigationDiv div {
+    border-radius: 10px;
+    background-color: rgb(88, 178, 214);
+    color: white;
+    height: 50px;
+    padding-right: 25px;
+    padding-left: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.inputLabel {
+    font-weight: 600;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.navBtn:hover {
+    color: #0056b3;
+}
+
+textarea {
+    width: 99%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    min-height: 15vh;
+    max-height: 40vh;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #e2e2e2;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    min-height: 30vh;
+}
+
+main {
+    display: flex;
+    background-color: rgb(35, 87, 199);
+    height: 100vh;
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mainCont {
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 65%;
+    background-color: rgb(35, 87, 199);
+}
+
+.mainCont h1 {
+    color: white;
+}
+
+.container {
+    width: 100%;
+}
+
+.encodedTextDiv {
+    margin-top: 15px;
+    border-radius: 7px;
+    background-color: white;
+    min-height: 53vh; 
+    width: 96%;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    word-wrap: break-word;
+    transition: height 0.5s;
+    overflow-y: auto; 
+}
+
+.encodedTextDiv img {
+    max-width: 100%;
+    max-height: calc(53vh - 20px);
+    margin: auto;
+    display: block;
+    background-color: white; 
+    padding: 20px; 
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.qrCodeContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.qrCodeContainer img {
+    max-width: 80%;
+    height: auto;
+    background-color: white;
+    padding: 20px;
+}
+
+.qrCodeColors{
+display: flex;
+flex-direction: column;
+justify-content: left;
+
+}
+.backgroundColor{
+
+width: 20%;
+}
+.fillColor{
+
+    width: 20%;
+}
+.qrBtn{
+    width: 30%;
+}
+.qrCodeDiv{
+    margin-top: 15px;
+    border-radius: 7px;
+    background-color: white;
+    min-height: 45vh; 
+    width: 96%;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    word-wrap: break-word;
+    transition: height 0.5s;
+    overflow-y: auto; 
+}
