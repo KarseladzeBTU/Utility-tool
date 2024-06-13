@@ -24,15 +24,12 @@
                     <input type="color" id="back_color" name="back_color" value="#ffffff">
                 </div>
             </div>
-           
         </form>
-
     </div>
     <div class="qrCodeDiv">
         {% if qr_image %}
         <img src="data:image/jpeg;base64,{{ qr_image }}" alt="QR Code">
         {% endif %}
     </div>
-
 </div>
 {% endblock %}

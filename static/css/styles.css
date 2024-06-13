@@ -14,8 +14,8 @@ nav {
     padding: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; 
-    height: 89%; 
+    justify-content: space-between;
+    height: 89%;
 }
 
 
@@ -141,13 +141,13 @@ main {
     margin-top: 15px;
     border-radius: 7px;
     background-color: white;
-    min-height: 53vh; 
+    min-height: 53vh;
     width: 96%;
     padding: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     word-wrap: break-word;
     transition: height 0.5s;
-    overflow-y: auto; 
+    overflow-y: auto;
 }
 
 .encodedTextDiv img {
@@ -155,8 +155,8 @@ main {
     max-height: calc(53vh - 20px);
     margin: auto;
     display: block;
-    background-color: white; 
-    padding: 20px; 
+    background-color: white;
+    padding: 20px;
 }
 
 
@@ -213,11 +213,11 @@ width: 20%;
     margin-top: 15px;
     border-radius: 7px;
     background-color: white;
-    min-height: 45vh; 
+    min-height: 45vh;
     width: 96%;
     padding: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     word-wrap: break-word;
     transition: height 0.5s;
-    overflow-y: auto; 
+    overflow-y: auto;
 }
