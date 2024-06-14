@@ -65,9 +65,12 @@ def json():
 @app.route('/qr', methods=['GET', 'POST'])
 def qr_page():
     if request.method == 'POST':
-        data = request.form.get('text')
-        fill_color = request.form.get('fill', 'black')
-        back_color = request.form.get('back_color', 'white')
+        data = request.args.get('text')
+        if not data:
+            return {"message": 'Text is required'}, 400
+
+        fill_color = request.args.get('fill', 'black')
+        back_color = request.args.get('back_color', 'white')
 
         qr = qrcode.QRCode(
             version=None,
@@ -82,7 +85,10 @@ def qr_page():
         img.save(img_io, 'JPEG', quality=70)
         img_io.seek(0)
 
-        return send_file(img_io, mimetype='image/jpeg')
+        response = make_response(img_io.getvalue())
+        response.headers['Content-Type'] = 'image/jpeg'
+
+        return response
     return render_template('qr.html')
 
 @app.route('/link_shortener', methods=['GET', 'POST'])
